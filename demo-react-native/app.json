@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Avaya Infinity Agent SDK",
+    "slug": "demo-react-native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "avayaagentdemo",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.avayaagentdemo",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Microphone access is required for agent voice calls."
+      }
+    },
+    "android": {
+      "package": "com.example.avayaagentdemo",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "RECORD_AUDIO",
+        "MODIFY_AUDIO_SETTINGS"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
+  }
+}
